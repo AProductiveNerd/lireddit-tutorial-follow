@@ -1,5 +1,8 @@
-import { IDatabaseDriver } from "@mikro-orm/core";
-import { Connection, EntityManager } from "typeorm";
+import {
+	EntityManager,
+	Connection,
+	IDatabaseDriver,
+} from "@mikro-orm/core";
 
 export type MyContext = {
 	em: EntityManager<IDatabaseDriver<Connection>>;
